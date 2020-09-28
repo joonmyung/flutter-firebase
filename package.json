@@ -1,0 +1,20 @@
+{
+  "name": "flutter-firebase",
+  "version": "1.0.0",
+  "repository": "git@github.com:jeffjose/flutter-firebase.git",
+  "author": "Jeffrey Jose <jeffjosejeff@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "create:splash": "flutter pub pub run flutter_native_splash:create",
+    "create:icons": "flutter pub pub run flutter_launcher_icons:main",
+    "create:models": "flutter pub pub run build_runner build --delete-conflicting-outputs",
+    "create:all": " yarn create:splash; yarn create:icons; yarn create:models",
+    "clean": "flutter clean",
+    "dev": "flutter run",
+    "build": "flutter build apk --target-platform android-arm,android-arm64,android-x64 --split-per-abi",
+    "pub": "flutter pub get",
+    "deploy:functions": "firebase deploy --only functions",
+    "remove:apk": "adb uninstall com.jeffreyjose.baby",
+    "clean:apk": "adb shell pm clear com.jeffreyjose.baby"
+  }
+}

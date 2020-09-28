@@ -1,0 +1,56 @@
+name: flutter_firebase
+description: A new Flutter project.
+
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  firebase_core:
+  firebase_analytics:
+  cloud_firestore:
+  firebase_auth:
+  firebase_messaging:
+  google_sign_in:
+  splashscreen:
+  flutter_signin_button:
+  stream_state:
+  rxdart:
+  cupertino_icons:
+  path_provider:
+  google_fonts:
+  flutter_statusbarcolor:
+  animations:
+  flutter_local_notifications:
+  to_string:
+  json_annotation:
+
+dev_dependencies:
+  pedantic:
+  flutter_native_splash:
+  flutter_launcher_icons:
+  to_string_generator:
+  build_runner:
+  json_serializable:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo.png
+
+flutter_native_splash:
+  image: "assets/logo.png"
+  color: "121212"
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo.png"
